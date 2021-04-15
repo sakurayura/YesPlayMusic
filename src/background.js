@@ -22,6 +22,8 @@ import express from "express";
 import expressProxy from "express-http-proxy";
 import Store from "electron-store";
 
+//用于创建窗口与处理系统事件
+
 class Background {
   constructor() {
     this.window = null;
@@ -96,6 +98,7 @@ class Background {
 
     const appearance = this.store.get("settings.appearance");
 
+    //创建浏览器窗口
     this.window = new BrowserWindow({
       width: this.store.get("window.width") || 1440,
       height: this.store.get("window.height") || 840,
