@@ -3,7 +3,7 @@
   "version": "0.3.5",
   "private": true,
   "description": "A third party music player for Netease Music",
-  "author": "hawtim<hawtimzhang@gmail.com>",
+  "author": "sakurayura<humpysir@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -24,7 +24,7 @@
     "netease_api:install": "cd ./netease_api && npm install",
     "netease_api:setup": "npm run netease_api:pull && npm run netease_api:install"
   },
-  "main": "background.js",
+  "main": "background.js",  
   "dependencies": {
     "@njzy/unblockneteasemusic": "^0.25.3",
     "axios": "^0.21.0",
