@@ -98,7 +98,7 @@ class Background {
 
     const appearance = this.store.get("settings.appearance");
 
-    //创建浏览器窗口
+    //创建浏览器窗口函数
     this.window = new BrowserWindow({
       width: this.store.get("window.width") || 1440,
       height: this.store.get("window.height") || 840,
